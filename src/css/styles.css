@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 100vh;
+    background-image: url(../img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--theme-color-dark);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+}
+
+header .img-logo {
+    width: 100vw;
+}
+
+header .img-logo .logo {
+    width: 300px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustracao {
+    max-width: 50%;
+}
+
+.ilustracao img {
+    width: 100%;
+}
+
+.registro {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.container-main .registro h2 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    text-transform: capitalize;
+}
+
+.container-main .registro p {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 25px 0;
+    font-size: 20px;
+    max-width: 580px;
+}
+
+ .container-main .registro .btn-registro {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: var(--theme-color-dark);
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    padding: 15px 30px;
+    display: inline-block;
+    width: 250px;
+}
+
+ .container-main .registro .btn-registro:hover {
+    color: #fff;
+    background-color: var(--theme-color-soft);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8em;
+}
+
+footer .icons a i {
+    color: #fff;
+    margin: 0 10px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+footer .icons a:hover i {
+    color: var(--theme-color-soft);
+    border: var(--theme-color-soft) solid 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:872px){
+    body {
+        background-image: url(../img/bg-mobile.svg);
+    }
+    
+    .container {
+        display: block;
+    }
+
+    header .img-logo {
+        padding: 20px 0;
+    }
+
+    header .img-logo .logo {
+        width: 30%;
+    }
+
+    .container-main {
+        text-align: center;
+    }
+
+    .container-main .registro {
+        padding: 0;
+    }
+
+    .container-main .registro h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .container-main {
+        flex-direction: column;
+    }
+
+    footer {
+        justify-content: center;
+        padding: 0;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:714px) {
+    .container-main .registro h2 {
+        font-size: 25px;
+    }
+    .container-main .registro p {
+        font-size: 16px;
+    }
+
+    .container-main .registro .btn-registro {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:549px) {
+    .container-main .registro h2 {
+        font-size: 20px;
+    } 
+
+    .container-main .registro .btn-registro{
+        width: 200px;
+    }
+}
+
+@media (max-width:439px) {
+    .container-main .registro h2 {
+        font-size: 18px;
+    } 
+
+    .container-main .registro .btn-registro{
+        width: 150px;
+    }
+}
+
+@media (max-width:395px) {
+    .container-main .registro h2 {
+        font-size: 15px;
+    }  
+
+    .container-main .registro p {
+        font-size: 12px;
+    }
+
+    .container-main .registro .btn-registro {
+        font-size: 12px;
+    }
+
+    footer .icons a i {
+        width: auto;
+    }
+
+}
